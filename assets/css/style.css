@@ -1,11 +1,111 @@
-.crystal {
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
+* {
+    margin: 0;
 }
 
+body {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#info {
+    background-image: url(../images/darkness.png);
+}
+
+.wrapper {
+    background-image: url(../images/darkness.png);
+}
+
+body {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/* all info regarding crystal operation all the way thru crystal hover */
 .crystals {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url(../images/400px-Crystal_Core_full.jpg);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.crystal {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: #f7f4e6;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s;
+}
+
+.crystal:hover {
+    box-shadow: 20px 20px 20px rgba(33, 145, 189, 0.5);
+    cursor: pointer;
+    transition: box-shadow 2s;
+}
+
+/* keeps the images at a managable width */
+img {
+    width: 50px;
+}
+
+/* hold all info pertaining to the stats of game */
+#gameInfo {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 70px;
+    width: 300px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* each stat of the game individually  */
+#previous {
+
+    width: 60%;
+    border: 1px solid #01033d;
+    padding: 10px;
+    background-color: #e8e8b0;
+    font-weight: bold;
+    /* color: whitesmoke; */
+    font-family: 'Architects Daughter', cursive;
+}
+
+#win {
+    /* margin: right; */
+    width: 60%;
+    border: 1px solid #01033d;
+    padding: 10px;
+    background-color: #e8e8b0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#loss {
+    /* margin: bottom; */
+    width: 60%;
+    border: 1px solid #01033d;
+    /* padding: 10px; */
+    background-color: #e8e8b0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#result {
+    /* margin: center; */
+    width: 60%;
+    border: 1px solid #01033d;
+    /* padding: 10px; */
+    background-color: #e8e8b0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#footer {
+    height: 40px;
+    width: 100%;
+    padding: 2px;
+    margin: 180px 0 0 0;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #e8e8b0;
 }

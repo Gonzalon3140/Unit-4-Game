@@ -6,38 +6,43 @@
 // if the number is equal too the random number then we will increment a win
 
 let randomResult;
-let wins = 0;
-let losses = 0;
+let loss = 0;
+let win = 0;
 let previous = 0;
 
 let resetAndStart = function () {
 
     $(".crystals").empty();
 
+    let images = ["./assets/images/1starCrystal.png", "./assets/images/2crystal.png", "./assets/images/3crystal.png", "./assets/images/4crystal.png"];
+
+
     randomResult = Math.floor(Math.random() * 69) + 30;
 
-    $("#result").html("Random Result:" + randomResult);
+    $("#result").html("Random Number:" + randomResult);
+
     for (i = 0; i < 4; i++) {
 
         let random = Math.floor(Math.random() * 11) + 1;
-        // console.log(random);
 
-        let crystal = $("<div>")
+        let crystal = $("<div>");
         crystal.attr({
             "class": 'crystal',
             "data-random": random
         });
+        crystal.css({
+            "background-image": "url('" + images[i] + "')",
+            "background-size": "cover"
 
-        crystal.html(random);
-
+        })
         $(".crystals").append(crystal);
+
     }
 
+    $("#previous").html("Total Score: " + previous);
 }
 
 resetAndStart();
-
-
 
 // event Delegation
 $(document).on('click', ".crystal", function () {
@@ -46,12 +51,15 @@ $(document).on('click', ".crystal", function () {
 
     previous += num;
 
+    $("#previous").html("Total score: " + previous);
+
     console.log(previous);
 
     if (previous > randomResult) {
-        loss--;
 
-        $("#loss").html("loss");
+        loss++;
+
+        $("#loss").html("You lost:" + loss);
 
         previous = 0;
 
@@ -59,9 +67,11 @@ $(document).on('click', ".crystal", function () {
 
     } else if (previous === randomResult) {
         win++;
-        $("#win").html("win");
+
+        $("#win").html("You Win:" + win);
 
         previous = 0;
+
         resetAndStart();
     }
 
