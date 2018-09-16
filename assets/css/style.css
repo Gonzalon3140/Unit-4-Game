@@ -2,24 +2,16 @@
     margin: 0;
 }
 
-body {
-    font-family: 'Architects Daughter', cursive;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
 #info {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
     background-image: url(../images/darkness.png);
+
+
 }
 
 .wrapper {
     background-image: url(../images/darkness.png);
-}
-
-body {
-    font-family: 'Architects Daughter', cursive;
-    font-weight: bold;
-    color: whitesmoke;
 }
 
 /* all info regarding crystal operation all the way thru crystal hover */
@@ -28,7 +20,6 @@ body {
     justify-content: space-around;
     align-items: center;
     background-image: url(../images/400px-Crystal_Core_full.jpg);
-    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -55,50 +46,64 @@ img {
 
 /* hold all info pertaining to the stats of game */
 #gameInfo {
+    background-color: #f7fffb;
+    border-radius: 4px;
     margin-top: 40px;
     margin-left: 100px;
-    margin-right: 70px;
+    margin-right: 10px;
+    padding: 0px;
     width: 300px;
-    font-family: 'Architects Daughter', cursive;
+}
+
+#box1 {
+    padding: 5px;
+    background-image: url(../images/400px-Crystal_Core_full.jpg);
+}
+
+#box2 {
+    padding: 5px;
+    background-image: url(../images/400px-Crystal_Core_full.jpg);
 }
 
 /* each stat of the game individually  */
 #previous {
-
     width: 60%;
-    border: 1px solid #01033d;
     padding: 10px;
-    background-color: #e8e8b0;
-    font-weight: bold;
-    /* color: whitesmoke; */
-    font-family: 'Architects Daughter', cursive;
+    color: #f7fffb;
+    background-color: #034066;
+    font-family: 'Amatic SC', cursive;
 }
 
 #win {
-    /* margin: right; */
     width: 60%;
-    border: 1px solid #01033d;
     padding: 10px;
-    background-color: #e8e8b0;
-    font-family: 'Architects Daughter', cursive;
+    color: #f7fffb;
+    background-color: #034066;
+    font-family: 'Amatic SC', cursive;
 }
 
 #loss {
-    /* margin: bottom; */
     width: 60%;
-    border: 1px solid #01033d;
-    /* padding: 10px; */
-    background-color: #e8e8b0;
-    font-family: 'Architects Daughter', cursive;
+    padding: 10px;
+    color: #f7fffb;
+    background-color: #034066;
+    font-family: 'Amatic SC', cursive;
 }
 
 #result {
-    /* margin: center; */
     width: 60%;
-    border: 1px solid #01033d;
-    /* padding: 10px; */
-    background-color: #e8e8b0;
-    font-family: 'Architects Daughter', cursive;
+    padding: 10px;
+    color: #f7fffb;
+    background-color: #034066;
+    font-family: 'Amatic SC', cursive;
+}
+
+#card {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: 'Amatic SC', cursive;
 }
 
 #footer {
@@ -106,6 +111,11 @@ img {
     width: 100%;
     padding: 2px;
     margin: 180px 0 0 0;
-    font-family: 'Architects Daughter', cursive;
+    color: #f7fffb;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
     background-color: #e8e8b0;
+    background-image: url(../images/400px-Crystal_Core_full.jpg);
+
 }

@@ -59,7 +59,7 @@ $(document).on('click', ".crystal", function () {
 
         loss++;
 
-        $("#loss").html("You lost:" + loss);
+        $("#loss").html("You Lost:" + loss);
 
         previous = 0;
 

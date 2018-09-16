@@ -9,39 +9,46 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Crystal Collection</title>
 </head>
 
 <body>
 
-    <div id="info" class="p-3 mb-2 bg-info text-white">Crystal Collection Game</div>
+    <div class="wrapper" class="col-md-12">
 
-    <div class="wrapper">
+        <div class="container"></div>
+
+        <div id="info" class="p-3 bg-info text-white">Crystal Collection Game</div>
 
 
 
 
+        <!-- <p id="previous"></p>
+    <p id="win">You Win</p>
+    <p id="loss"> You Lose</p> -->
 
-        <div class="crystals"></div>
 
-        <div id="gameInfo">
+        <div class="crystals" class="col-md-12"></div>
+
+        <div id="gameInfo" class="col-md-12">
 
             <div class="container">
-                <div class="row">
-                    <div id="previous" class="col">
-                        <p>some</p>
+
+                <div id="box1" class="row" class="col-md-12">
+                    <div id="previous" class="col-md-8">
+                        some
                     </div>
-                    <div id="win" class="col">
-                        You Win
+                    <div id="win" class="col-md-8">
+                        You Win:
                     </div>
                 </div>
-                <div class="row">
-                    <div id="loss" class="col">
-                        You Lose
+                <div id="box2" class="row" class="col-md-12">
+                    <div id="loss" class="col-md-8">
+                        You Lose:
                     </div>
-                    <div id="result" class="col">
+                    <div id="result" class="col-md-8">
                         some
                     </div>
                 </div>
@@ -49,27 +56,32 @@
 
         </div>
 
-        <!-- <p id="previous"></p>
-    <p id="win">You Win</p>
-    <p id="loss"> You Lose</p> -->
 
-        <div id="footer" class="card">
-            <div class="card-header">
-                Crystal Collection Game
+        <div id="card" class="card" style="width: 18rem;" class="col-md-12">
+            <div class="card-body">
+                <h5 class="card-title">How to Play..</h5>
+                <p class="card-text">
+                    <li>The object of the game is to equal the Random number.</li>
+                    <li>Each crystal has a different value. Click on each crystal until you match the Random Number.</li>
+                    <li>If you equal the Random Number without going over you will win. </li>
+                    <li>If you go over the Random Number you will lose.</li>
+                </p>
             </div>
-            <!-- <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div> -->
         </div>
 
+
+        <div id="footer" class="card" class="col-md-12">
+
+            <div class="card-header">
+                Tony Gonzales @ 2018
+            </div>,
+
+        </div>
+
+        <script type="text/javascript" src="./assets/javascript/game.js">
+        </script>
+
     </div>
-
-
-    <script type="text/javascript" src="./assets/javascript/game.js">
-    </script>
-
-
 
 </body>
 
